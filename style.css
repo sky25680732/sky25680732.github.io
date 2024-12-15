@@ -71,7 +71,6 @@ h1 {
 .works-item img{
     max-width: 100%;
     height: auto;
-}
-.works-item img:hover{
-    filter: blur(20px);
+    object-fit: cover;
+    aspect-ratio: 1;
 }
