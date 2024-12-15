@@ -65,6 +65,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.works-item{
+    line-height: 0;
+}
 .works-item img{
     max-width: 100%;
     height: auto;
