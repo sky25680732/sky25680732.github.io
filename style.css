@@ -61,14 +61,14 @@ h1 {
     box-sizing: border-box;
     /* 把padding、border的尺寸含入高度、寬度內 */
 }
-.works{
+.works {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.works-item{
+.work-item {
     line-height: 0;
 }
-.works-item img{
+.work-item img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
