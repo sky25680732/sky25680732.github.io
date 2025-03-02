@@ -1,85 +1,60 @@
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px;
-    box-sizing: border-box;
+.slogan-1 {
+    margin: 0;
+    padding-top: 4.125rem;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1;
 }
-.myphoto {
-    width: 120px;
-    border-radius: 9999px;
+.slogan-2 {
+    margin: 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 300;
 }
-.photo {
-    text-align: center;
+.home-heading {
+    margin: 0;
+    padding-left: 148px;
+    font-size: 1rem;
+    font-weight: 300;
 }
-.name {
-    text-align: center;
+.home-heading::before { /* ::before 前面加東西 */
+    content:'';
+    display: block; /* 畫線 */
+    width: 136px;
+    height: 1px;
+    background-color: #ddd;
+    transform: translate(-148px, 8px); /* 移動 */
 }
-h1 {
-    font-family: sans-serif;
-    color: #006fb5;
-    font-size: 28px;
+.scene-title {
+    margin: 0;
+    padding-right: .5rem;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
-.info {
-    color: #3d3d3d;
-    font-family: sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-}
-.button {
-    position: relative;
-    display: block;
-    border: 1px solid #3d3d3d;
-    padding: 20px;
-    text-align: center;
-    margin: 30px 0;
-    font-family: sans-serif;
-    font-weight: bold;
+.scene-type {
+    border: 1px solid #929292;
     border-radius: 4px;
-    color: #3d3d3d;
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 4px;
+    padding: 0 .5rem;
+    color: #929292;
+    font-size: 14px;
 }
-.icon {
+
+.scene-input i {
     position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 60px;
+    top: 14px;
+    left: 12px;
+    font-size: 1.5rem;
+    color: #929292;
 }
-.top {
-    display: block;
-    /* 變區塊 */
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    /* 變圓形 */
-    background-color: yellowgreen;
-    text-align: center;
-    padding-top: 16px;
-    box-sizing: border-box;
-    /* 把padding、border的尺寸含入高度、寬度內 */
+
+.bg-gray {
+    background-color: rgba(221, 221, 221, 0.4);
 }
-.works {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+.cta {
+    background-image: url(bg-cta.jpg);
+    background-size: cover;
 }
-.work-item {
-    line-height: 0;
-}
-.work-item img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 1;
-}
-@media (min-width: 700px) {
-    .container {
-        width: 600px;
-    }
-    .works {
-        grid-template-columns: repeat(3,1fr);
-    }
+.fs-7 {
+    font-size: 0.875rem;
 }

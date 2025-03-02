@@ -1,71 +1,133 @@
 <!DOCTYPE html>
 <html lang="TW">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>我的個人頁面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
     <link rel="stylesheet" href="style.css">
+    <script src="common.js" async></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="photo">
-            <img src="photo.jpg" alt="" class="myphoto">
-        </div>
-        <div class="name">
-            <h1>Misa 姚韋禎</h1>
-        </div>
-        <div class="info">
-            <p>堯舜設計創辦人、中華平面設計協會副理事長、台灣海報設計協會秘書長、銘傳大學講師、赫綵設計學院講師</p>
-            <p>專長網頁前端、CMS 系統建置、UI/UX、平面設計、品牌形象設計，2010 年創業，2013 年開始在大學與民間教育機構從事專業的教育工作。</p>
-        </div>
-        <div class="button-group"><!-- 按鈕的群組 -->
-            <a href="#" class="button"><!-- 一顆按鈕-->
-                <img src="icon.jpg" alt="" class="icon">
-                我的IG
-            </a>
-            <a href="#" class="button"><!-- 一顆按鈕-->
-                我的臉書
-            </a>
-            <a href="#" class="button"><!-- 一顆按鈕-->
-                我的臉書
-            </a>
-            <a href="#" class="button"><!-- 一顆按鈕-->
-                我的臉書
-            </a>
-            <a href="#" class="button"><!-- 一顆按鈕-->
-                我的臉書
-            </a>
-        </div>
-        
-        <div class="works">
-            <div class="work-item">
-                <img src="photo1.jpg" alt="">
+    <div class="container-fluid px-6">
+        <p class="slogan-1">歷史與現代、人文與自然、都市與鄉間</p>
+        <p class="slogan-2">都在桃園市</p>
+        <h1 class="home-heading">桃園協助影視拍攝與發展中心</h1>
+    </div>
+    <div class="container-fluid px-6 mt-6">
+        <div class="row">
+            <div class="col">
+                <img src="scene1.jpg" class="img-fluid" alt="">
+                <div class="d-flex align-items-center mt-2">
+                    <h3 class="scene-title">八德埤塘生態公園</h3>
+                    <div class="scene-type">公園河岸綠地</div>
+                </div>
             </div>
-            <div class="work-item">
-                <img src="photo2.jpg" alt="">
-            </div>
-            <div class="work-item">
-                <img src="photo3.jpg" alt="">
-            </div>
-            <div class="work-item">
-                <img src="photo2.jpg" alt="">
-            </div>
-            <div class="work-item">
-                <img src="photo3.jpg" alt="">
-            </div>
-            <div class="work-item">
-                <img src="photo1.jpg" alt="">
+            <div class="col">
+                <img src="scene2.jpg" class="img-fluid" alt="">
+                <div class="d-flex align-items-center mt-2">
+                    <h3 class="scene-title">八德埤塘生態公園</h3>
+                    <div class="scene-type">公園河岸綠地</div>
+                </div>
             </div>
         </div>
-
     </div>
 
-    <a href="#top" class="top">
-        TOP
-    </a>
+    <div class="container-fluid py-6 mt-6 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5">
+                    <h2 class="text-center">桃園市場景資料庫</h2>
+                </div>
+                <div class="col-7">
+                    <div class="scene-input position-relative">
+                        <i class="fa-regular fa-keyboard"></i>
+                        <input type="text" class="form-control form-control-lg ps-5" placeholder="請輸入關鍵字">
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="scene-input position-relative">
+                                <i class="fa-solid fa-list"></i>
+                                <select class="form-select form-select-lg ps-5">
+                                    <option value="">場景類別</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="scene-input position-relative">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <select class="form-select form-select-lg ps-5">
+                                    <option value="">所在行政區</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-dark btn-lg mt-3 w-100">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        找場景
+                    </a>
+                    <a href="#" class="btn btn-primary btn-lg mt-3 w-100">
+                        看所有場景
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid py-6 px-0">
+        <h2 class="text-center mb-5">協拍事件</h2>
+        <div class="owl-carousel owl-theme">
+            <img src="movie1.jpg" alt="">
+            <img src="movie2.jpg" alt="">
+            <img src="movie3.jpg" alt="">
+            <img src="movie1.jpg" alt="">
+            <img src="movie2.jpg" alt="">
+            <img src="movie3.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-white fs-7 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="logo_w.png" class="img-fluid" alt="">
+                </div>
+                <div class="col">
+                    <p>33049 桃園市桃園區三民路一段100號4樓<br>
+                        T：(03) 336-8785<br>
+                        F：(03) 333-4318</p>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="text-white">找場景</a><br>
+                            <a href="#" class="text-white">申請表單</a><br>
+                            <a href="#" class="text-white">協拍事件</a><br>
+                            <a href="#" class="text-white">關於桃園協拍中心</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="text-white">影視相關規定</a><br>
+                            <a href="#" class="text-white">訊息公告</a><br>
+                            <a href="#" class="text-white">聯絡我們</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-white">EN</a>
+                    <a href="#" class="text-white"><i class="fa-brands fa-square-facebook fs-6"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="common.js"></script>
 </body>
 
 </html>
